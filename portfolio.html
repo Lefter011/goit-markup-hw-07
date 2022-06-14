@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="en">Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./js/portfolio.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container_center">
+        <div class="header-nav">
+          <a lang="en" href="index.html" class="page-logo link"
+            ><span>Web</span>Studio</a
+          >
+          <nav>
+            <ul class="navigation">
+              <li class="navigation-item">
+                <a class="nav-link link" href="index.html">Студия</a>
+              </li>
+              <li class="current navigation-item">
+                <a class="nav-link current link" href="portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation-item">
+                <a class="nav-link link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contact-list-header">
+            <li class="contact-item-header">
+              <a class="nav-contact link" href="mailto:info@devstudio.com"
+                ><svg class="nav-contact-icon" width="16" height="12">
+                  <use href="./img/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-item-header">
+              <a class="nav-contact link" href="tel:+380961111111"
+                ><svg class="nav-contact-icon" width="10" height="16">
+                  <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section_filter_buttons">
+        <h1 class="visually-hidden"><span lang="en">Portfolio list</span></h1>
+        <div class="container_center">
+          <div id="filter-item-btn">
+            <button onclick="filter('all')" class="filter-btn btn-active">
+              Все
+            </button>
+            <button onclick="filter('website')" class="filter-btn">
+              Веб-сайты
+            </button>
+            <button onclick="filter('applications')" class="filter-btn">
+              Приложения
+            </button>
+            <button onclick="filter('design')" class="filter-btn">
+              Дизайн
+            </button>
+            <button onclick="filter('marketing')" class="filter-btn">
+              Маркетинг
+            </button>
+          </div>
+          <div class="list_container container">
+            <div class="jobs_container filterDiv applications">
+              <a class="jobs-link link" href="#">
+                <div class="jobs-item-container">
+                  <img
+                    class="jobs-container-img"
+                    src="./img/portfolio/img_ap_1.jpg"
+                    alt="Portfolio Application Seafood"
+                  />
+                  <div class="jobs-container-overlay">
+                    <p class="container-overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="jobs-container-card">
+                  <h2 class="jobs-container-topic">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h2>
+                  <p class="jobs-container-text">Приложение</p>
+                </div></a
+              >
+            </div>
+            <div class="jobs_container filterDiv website">
+              <a class="jobs-link link" href="#">
+                <div class="jobs-item-container">
+                  <img
+                    class="jobs-container-img"
+                    src="./img/portfolio/img_web_1.jpg"
+                    alt="Portfolio web-site Techcruck"
+                  />
+                  <div class="jobs-container-overlay">
+                    <p class="container-overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="jobs-container-card">
+                  <h2 class="jobs-container-topic">Технокряк</h2>
+                  <p class="jobs-container-text">Веб-сайт</p>
+                </div>
+              </a>
+            </div>
+            <div class="jobs_container filterDiv design">
+              <a class="jobs-link link" href="#">
+                <div class="jobs-item-container">
+                  <img
+                    class="jobs-container-img"
+                    src="./img/portfolio/img_de_1.jpg"
+                    alt="Portfolio poster New Orlean vs Golden Star"
+                  />
+                  <div class="jobs-container-overlay">
+                    <p class="container-overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="jobs-container-card">
+                  <h2 class="jobs-container-topic">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="jobs-container-text">Дизайн</p>
+                </div>
+              </a>
+            </div>
+            <div class="jobs_container filterDiv marketing">
+              <a class="jobs-link link" href="#">
+                <div class="jobs-item-container">
+                  <img
+                    class="jobs-container-img"
+                    src="./img/portfolio/img_mar_1.jpg"
+                    alt="Portfolio project Prime"
+                  />
+                  <div class="jobs-container-overlay">
+                    <p class="container-overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="jobs-container-card">
+                  <h2 class="jobs-container-topic">
+                    Проект <span lang="en">Prime</span>
+                  </h2>
+                  <p class="jobs-container-text">Маркетинг</p>
+                </div>
+              </a>
+            </div>
+            <div class="jobs_container filterDiv applications">
+              <a class="jobs-link link" href="#">
+                <div class="jobs-item-container">
+                  <img
+                    class="jobs-container-img"
+                    src="./img/portfolio/img_ap_2.jpg"
+                    alt="Portfolio project Boxes"
+                  />
+                  <div class="jobs-container-overlay">
+                    <p class="container-overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="jobs-container-card">
+                  <h2 class="jobs-container-topic">
+                    Проект <span lang="en">Boxes</span>
+                  </h2>
+                  <p class="jobs-container-text">Приложение</p>
+                </div>
+              </a>
+            </div>
+            <div class="jobs_container filterDiv website">
+              <a class="jobs-link link" href="#">
+                <div class="jobs-item-container">
+                  <img
+                    class="jobs-container-img"
+                    src="./img/portfolio/img_web_2.jpg"
+                    alt="Portfolio Inspiration has no Borders"
+                  />
+                  <div class="jobs-container-overlay">
+                    <p class="container-overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="jobs-container-card">
+                  <h2 class="jobs-container-topic" lang="en">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="jobs-container-text">Веб-сайт</p>
+                </div>
+              </a>
+            </div>
+            <div class="jobs_container filterDiv design">
+              <a class="jobs-link link" href="#">
+                <div class="jobs-item-container">
+                  <img
+                    class="jobs-container-img"
+                    src="./img/portfolio/img_de_2.jpg"
+                    alt="Portfolio edition Limited Edition"
+                  />
+                  <div class="jobs-container-overlay">
+                    <p class="container-overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="jobs-container-card">
+                  <h2 class="jobs-container-topic">
+                    Издание <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="jobs-container-text">Дизайн</p>
+                </div>
+              </a>
+            </div>
+            <div class="jobs_container filterDiv marketing">
+              <a class="jobs-link link" href="#">
+                <div class="jobs-item-container">
+                  <img
+                    class="jobs-container-img"
+                    src="./img/portfolio/img_mar_2.jpg"
+                    alt="Portfolio project LAB"
+                  />
+                  <div class="jobs-container-overlay">
+                    <p class="container-overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="jobs-container-card">
+                  <h2 class="jobs-container-topic">
+                    Проект <span lang="en">LAB</span>
+                  </h2>
+                  <p class="jobs-container-text">Маркетинг</p>
+                </div>
+              </a>
+            </div>
+            <div class="jobs_container filterDiv applications">
+              <a class="jobs-link link" href="#">
+                <div class="jobs-item-container">
+                  <img
+                    class="jobs-container-img"
+                    src="./img/portfolio/img_ap_3.jpg"
+                    alt="Portfolio project Growing Business"
+                  />
+                  <div class="jobs-container-overlay">
+                    <p class="container-overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="jobs-container-card">
+                  <p class="jobs-container-topic" lang="en">Growing Business</p>
+                  <p class="jobs-container-text">Приложение</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container_center footer-list">
+        <div class="footer-section-address">
+          <a lang="en" href="index.html" class="page-logo link"
+            ><span>Web</span>Studio</a
+          >
+          <address>
+            <ul class="contact-list-footer">
+              <li class="contact-item-footer">
+                г. Киев, пр-т Леси Украинки, 26
+              </li>
+              <li class="contact-item-footer">
+                <a
+                  class="contact-link-footer link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contact-item-footer">
+                <a class="contact-link-footer link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-section-join">
+          <h2 class="footer-section-join-topic">Присойденяйтесь</h2>
+          <div class="footer-section-social">
+            <a
+              class="footer-section-social-link link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+            >
+              <svg class="footer-section-social-icon" width="20" height="20">
+                <use href="./img/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a
+              class="footer-section-social-link link"
+              href="https://www.twitter.com/"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+            >
+              <svg class="footer-section-social-icon" width="20" height="20">
+                <use href="./img/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+            <a
+              class="footer-section-social-link link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+            >
+              <svg class="footer-section-social-icon" width="20" height="20">
+                <use href="./img/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+
+            <a
+              class="footer-section-social-link link"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+            >
+              <svg class="footer-section-social-icon" width="20" height="20">
+                <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-section-subscribe">
+          <p class="footer-section-subscribe-topic">Подписаться на рассылку</p>
+          <form class="footer-section-subscribe-form">
+            <input
+              class="footer-section-subscribe-input"
+              type="email"
+              placeholder="Email"
+            />
+            <button type="submit" class="footer-section-subscribe-button">
+              Подписаться
+              <svg width="24" height="24">
+                <use href="./img/symbol-defs.svg#icon-plain-footer"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
